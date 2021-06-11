@@ -102,3 +102,7 @@ sensor:
   - platform: adc
     pin: VCC
     name: "Elektroměr VCC Voltage"
+```
+## A všechny sensory pohromadě
+Soubor ke stažení: [sensors.yaml](https://github.com/mamo-nick/esphome-sensors/blob/main/sensors.yaml)
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/ESPhome_sensors.png)
