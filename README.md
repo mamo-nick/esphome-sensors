@@ -8,21 +8,21 @@
 Říká, zda zařízení je na síti, či nikoliv. V mém případě mám u těch důležitých (elektroměr, plynoměr, vodoměr) nastaveno odeslání notifikací při odpojení a opětovném připojení.
 ```
 binary_sensor:
- - platform: status
+  - platform: status
     name: "Elektroměr Stav"
 ```
 ## Restart
 Umožňuje restartovat zařízení z Homeassistanta (samozřejmě, pokud je připojeno)
 ```
 switch:
- - platform: restart
+  - platform: restart
     name: "Elektroměr restart"
 ```
 ## Doba běhu v sekundách
 Říká, jak dlouho od restartu zařízení běží. 
 ```
 sensor:
- - platform: uptime
+  - platform: uptime
     name: "Elektroměr Doba běhu v sec."
     id: uptime_s
     update_interval: 60s
@@ -32,12 +32,12 @@ sensor:
 Jako zdroj ale potřebuje i dobu běhu v sekundách.   
 ```
 sensor:
- - platform: uptime
+  - platform: uptime
     name: "Elektroměr Doba běhu v sec."
     id: uptime_s
     update_interval: 60s
 text_sensor:
- - platform: template
+  - platform: template
     name: "Elektroměr Doba běhu"
     lambda: |-
       uint32_t dur = id(uptime_s).state;
@@ -66,14 +66,14 @@ text_sensor:
 Říká verzi ESPhome obsaženou v nahraném firmware, datum a čas kompilace souboru
 ```
 text_sensor:
- - platform: version
+  - platform: version
     name: "Elektroměr Verze FW"
 ```
 ##  Wifi signál
 Jak napovídá název, ukazuje sílu wifi signálu v db. 
 ```
 sensor:
- - platform: wifi_signal
+  - platform: wifi_signal
     name: "Elektroměr WiFi signál"
     update_interval: 60s
 ```
