@@ -25,7 +25,7 @@ switch:
 ## Doba běhu v sekundách
 Říká, jak dlouho od restartu zařízení běží. 
 
-![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Doba behu v sec.png)
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Doba_behu_v_sec.png)
 ```
 sensor:
   - platform: uptime
@@ -37,7 +37,7 @@ sensor:
 Říká, jak dlouho od restartu zařízení běží, ovšem v rozumnějších jednotkách. 
 Jako zdroj ale potřebuje i dobu běhu v sekundách.   
 
-![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Doba behu.png)
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Doba_behu.png)
 ```
 sensor:
   - platform: uptime
@@ -72,6 +72,8 @@ text_sensor:
 ```
 ##  Verze
 Říká verzi ESPhome obsaženou v nahraném firmware, datum a čas kompilace souboru
+
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Verze.png)
 ```
 text_sensor:
   - platform: version
@@ -79,6 +81,8 @@ text_sensor:
 ```
 ##  Wifi signál
 Jak napovídá název, ukazuje sílu wifi signálu v db. 
+
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Wifi_signal.png)
 ```
 sensor:
   - platform: wifi_signal
@@ -91,6 +95,8 @@ Pomocí tohoto sensoru  lze získat
  - na jakou wifi je zařízení připojeno
  - na jakou anténu
  - a jakou má zařízení MAC adresu
+
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Wifi.png)
 ```
 text_sensor:
   - platform: wifi_info
@@ -105,6 +111,8 @@ text_sensor:
 ```
 ## Napětí na čipu
 Na deskách ESP8266 lze tímto měřit napětí na čipu. Na A0 pinu v tom případě nesmí nic být připojeno.
+
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Voltage.png)
 ```
 sensor:
   - platform: adc
