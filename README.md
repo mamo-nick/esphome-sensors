@@ -96,7 +96,6 @@ Pomocí tohoto sensoru  lze získat
  - na jakou anténu
  - a jakou má zařízení MAC adresu
 
-![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/wifi.png)
 ```
 text_sensor:
   - platform: wifi_info
