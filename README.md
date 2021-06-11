@@ -1,4 +1,3 @@
-# esphome-sensors
 # ESPhome interní sensory
  aneb co lze vyždímat z flasnuté desky
 > Jak jsem se postupně učil flashovat ESPhome, přicházel jsem víc a víc na možnosti dat, které z flasnuté desky dostat.
