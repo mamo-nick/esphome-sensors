@@ -6,6 +6,8 @@
 > Uvítám jakékoliv připomínky, zejména zda existují ještě další informace, které tu nemám.
 ## Stav zařízení
 Říká, zda zařízení je na síti, či nikoliv. V mém případě mám u těch důležitých (elektroměr, plynoměr, vodoměr) nastaveno odeslání notifikací při odpojení a opětovném připojení.
+
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Stav.png)
 ```
 binary_sensor:
   - platform: status
@@ -13,6 +15,8 @@ binary_sensor:
 ```
 ## Restart
 Umožňuje restartovat zařízení z Homeassistanta (samozřejmě, pokud je připojeno)
+
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Restart.png)
 ```
 switch:
   - platform: restart
@@ -20,6 +24,8 @@ switch:
 ```
 ## Doba běhu v sekundách
 Říká, jak dlouho od restartu zařízení běží. 
+
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Doba behu v sec.png)
 ```
 sensor:
   - platform: uptime
@@ -30,6 +36,8 @@ sensor:
 ## Doba běhu
 Říká, jak dlouho od restartu zařízení běží, ovšem v rozumnějších jednotkách. 
 Jako zdroj ale potřebuje i dobu běhu v sekundách.   
+
+![](https://github.com/mamo-nick/esphome-sensors/blob/main/picture/Doba behu.png)
 ```
 sensor:
   - platform: uptime
