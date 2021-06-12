@@ -4,6 +4,7 @@
 > Některé údaje považuji za naprosto nutné, jiné třeba ani v lovelace nezobrazuji.
 > Za naprosto zásadní považuji vědět, zda je zařízení momentálně na síti a pokud není, Homeassistant mi pošle notifikaci. 
 > Uvítám jakékoliv připomínky, zejména zda existují ještě další informace, které tu nemám.
+> Zdroj informací: [www.esphome.io](https://www.esphome.io)
 ## Stav zařízení
 Říká, zda zařízení je na síti, či nikoliv. V mém případě mám u těch důležitých (elektroměr, plynoměr, vodoměr) nastaveno odeslání notifikací při odpojení a opětovném připojení.
 
@@ -13,6 +14,7 @@ binary_sensor:
   - platform: status
     name: "Elektroměr Stav"
 ```
+Zdroj: [https://www.esphome.io/components/binary_sensor/status.html](https://www.esphome.io/components/binary_sensor/status.html)
 ## Restart
 Umožňuje restartovat zařízení z Homeassistanta (samozřejmě, pokud je připojeno)
 
@@ -22,6 +24,7 @@ switch:
   - platform: restart
     name: "Elektroměr restart"
 ```
+Zdroj: [https://www.esphome.io/components/switch/restart.html](https://www.esphome.io/components/switch/restart.html)
 ## Doba běhu v sekundách
 Říká, jak dlouho od restartu zařízení běží. 
 
@@ -33,6 +36,7 @@ sensor:
     id: uptime_s
     update_interval: 60s
 ```
+Zdroj: [https://www.esphome.io/components/sensor/uptime.html](https://www.esphome.io/components/sensor/uptime.html)
 ## Doba běhu
 Říká, jak dlouho od restartu zařízení běží, ovšem v rozumnějších jednotkách. 
 Jako zdroj ale potřebuje i dobu běhu v sekundách.   
@@ -70,6 +74,7 @@ text_sensor:
     icon: mdi:clock-start
     update_interval: 60s
 ```
+Zdroj: [https://www.esphome.io/components/sensor/uptime.html](https://www.esphome.io/components/sensor/uptime.html)
 ##  Verze
 Říká verzi ESPhome obsaženou v nahraném firmware, datum a čas kompilace souboru
 
@@ -79,6 +84,7 @@ text_sensor:
   - platform: version
     name: "Elektroměr Verze FW"
 ```
+Zdroj: [https://www.esphome.io/components/text_sensor/version.html](https://www.esphome.io/components/text_sensor/version.html)
 ##  Wifi signál
 Jak napovídá název, ukazuje sílu wifi signálu v db. 
 
@@ -89,6 +95,8 @@ sensor:
     name: "Elektroměr WiFi signál"
     update_interval: 60s
 ```
+Zdroj: [https://www.esphome.io/components/sensor/wifi_signal.html](https://www.esphome.io/components/sensor/wifi_signal.html)
+sensor/wifi_signal.html
 ## Wifi info
 Pomocí tohoto sensoru  lze získat
  - IP adresu zařízení
@@ -109,6 +117,7 @@ text_sensor:
     mac_address:
       name: "Elektroměr Mac Wifi Address"
 ```
+Zdroj: [https://www.esphome.io/components/text_sensor/wifi_info.html](https://www.esphome.io/components/text_sensor/wifi_info.html)
 ## Napětí na čipu
 Na deskách ESP8266 lze tímto měřit napětí na čipu. Na A0 pinu v tom případě nesmí nic být připojeno.
 
@@ -119,6 +128,7 @@ sensor:
     pin: VCC
     name: "Elektroměr VCC Voltage"
 ```
+Zdroj: [https://www.esphome.io/components/sensor/adc.html](https://www.esphome.io/components/sensor/adc.html)
 ## A všechny sensory pohromadě
 Soubor ke stažení: [sensors.yaml](https://github.com/mamo-nick/esphome-sensors/blob/main/sensors.yaml)
 
